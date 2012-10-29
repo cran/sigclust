@@ -1,0 +1,9 @@
+1. Download file: sigclust.tar.gz
+2. Install:
+Linux/Unix:
+-----------
+      R CMD INSTALL sigclust.tar.gz
+Windows:
+--------
+      install.packages("sigclust.tar.gz",type="source")
+
