@@ -89,7 +89,20 @@
                                         #	vsimeigval<-veigval
 
     if(icovest==1){
-      vsimeigval <- .sigclustcovest(veigval,simbackvar)$veigvest
+      taub = 0
+      tauu <- .sigclustcovest(veigval,simbackvar)$tau
+      etau = (tauu-taub)/100
+      ids = rep(0,100)
+      for(i in 1:100){
+        taus = taub + (i-1)*etau
+        eigval.temp <- veigval - taus
+        eigval.temp[eigval.temp<simbackvar] <- simbackvar
+        ids[i] <- eigval.temp[1]/sum(eigval.temp)
+      }
+      tau <- taub + (which.max(ids)-1)*etau
+      vsimeigval <- veigval - tau
+      vsimeigval[vsimeigval<simbackvar] <- simbackvar
+      #vsimeigval <- .sigclustcovest(veigval,simbackvar)$veigvest
     }
 
     if(icovest==2){
