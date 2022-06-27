@@ -8,3 +8,8 @@ exportPattern(".")
 import(
   methods
 )
+
+importFrom("graphics", "abline", "legend", "lines", "par", "points",
+           "text", "title")
+importFrom("stats", "cov", "density", "dnorm", "kmeans", "mad",
+           "pnorm", "qnorm", "quantile", "rnorm", "runif", "sd")

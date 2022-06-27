@@ -1,6 +1,6 @@
 Package: sigclust
 Title: Statistical Significance of Clustering
-Version: 1.1.0
+Version: 1.1.0.1
 Author: Hanwen Huang, Yufeng Liu & J. S. Marron
 Description: SigClust is a statistical method for testing the
         significance of clustering results. SigClust can be applied to
@@ -10,7 +10,7 @@ Description: SigClust is a statistical method for testing the
 Depends: R (>= 2.4.0), methods
 Maintainer: Hanwen Huang <hanwenh.unc@gmail.com>
 License: GPL (>= 2)
-Packaged: 2014-01-22 14:51:39 UTC; llfan
+Packaged: 2022-06-27 05:13:30 UTC; hornik
 Repository: CRAN
-Date/Publication: 2014-01-23 12:56:21
+Date/Publication: 2022-06-27 05:20:53 UTC
 NeedsCompilation: no
